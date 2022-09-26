@@ -33,8 +33,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return WebView(
-      initialUrl: 'https://protrader.vn/',
-    );
+    return Scaffold(body: SafeArea(
+      child: WebView(
+        initialUrl: 'https://protrader.vn/',
+      ),
+    ),);
   }
 }
